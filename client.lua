@@ -11,7 +11,7 @@ end)
 
 
 Citizen.CreateThread(function()
-    
+    Citizen.Wait(3000)
     for k, v in ipairs(Config.Coords) do
         print(k)
         v.blip = AddBlipForCoord(v.x, v.y, v.z)
